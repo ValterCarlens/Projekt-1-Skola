@@ -4,12 +4,12 @@ import random
 
 while True:
     os.system('cls')
-    secret_number =random.randint(1, 100)
-    total_guesses=0
-    while total_guesses <=7:
+    secret_number = random.randint(1, 100)
+    total_guesses = 0
+    while total_guesses <= 7:
         try:
             guess = input("gissa hemliga tal ")
-            if guess == "/q":
+            if guess == "/q" or guess == "/quit":
                 exit()
                 
             guess = int(guess)
@@ -38,7 +38,3 @@ while True:
     if try_again == 'N' or try_again == 'Nej':
         print("Tack för att du spelade!")
         exit()
-
-
-    
-
