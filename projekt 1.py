@@ -35,6 +35,6 @@ while True:
 
     try_again = input("Vill du spela igen? Enter Ja/Nej")
 
-    if try_again == 'N' or try_again == 'Nej':
+    if try_again == "N" or try_again == "Nej":
         print("Tack för att du spelade!")
         exit()
