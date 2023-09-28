@@ -1,9 +1,14 @@
 import os
 import time
 import random
+from colors import bcolors
 
 while True:
     os.system('cls')
+    print(bcolors.YELLOW + """ 
+    =============================
+    G I S S A  T A L E T  1 - 100
+    ====== DU HAR 7 FÖRSÖK! ======\n\n""")
     secret_number = random.randint(1, 100)
     total_guesses = 0
     while total_guesses <= 7:
